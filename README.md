@@ -110,10 +110,28 @@ Market-Risk-Analytics/
 ├── sql/
 │   ├── schema.sql         # Tables, indexes and 12 ETF instrument definitions
 │   └── reporting.sql      # Six reporting views
+├── dashboard/
+│   ├── Market-Risk-Analytics.pbix
+│   └── screenshots/
+│       ├── market-overview.png
+│       ├── market-regimes.png
+│       └── risk-volatility.png
 └── .gitignore
 ```
 
-**Dashboard deliverable:** The three-page Power BI report exists outside the currently published repository. Its `.pbix` and screenshots are pending upload; they are not represented here as published artifacts.
+## Power BI dashboard
+
+The completed three-page Power BI report is available as [Market-Risk-Analytics.pbix](dashboard/Market-Risk-Analytics.pbix). The report uses locally generated CSV outputs; configure source paths in Power BI Desktop before refreshing on another machine.
+
+### 01 — Market Overview
+![Market Overview dashboard](dashboard/screenshots/market-overview.png)
+
+### 02 — Market Regime Analysis
+![Market Regime Analysis dashboard](dashboard/screenshots/market-regimes.png)
+
+### 03 — Risk & Volatility
+![Risk & Volatility dashboard](dashboard/screenshots/risk-volatility.png)
+
 
 ## Limitations and interpretation
 
@@ -128,4 +146,4 @@ Market-Risk-Analytics/
 
 This portfolio project demonstrates practical data-engineering and analytics skills: normalized relational tables, SQL window functions and views, input validation, Python statistical analysis, uncertainty reporting, and dashboard storytelling.
 
-**Status:** SQL and Python code published; database rebuild from stored observations verified; Power BI report/screenshots still to be added.
+**Status:** Python, SQL, Power BI report and screenshots published. Database rebuild from stored observations verified; independent full Yahoo Finance re-download not yet verified.

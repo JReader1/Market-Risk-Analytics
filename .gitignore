@@ -1,0 +1,40 @@
+
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# IDE configuration
+.idea/
+.vscode/
+
+# SQLite temporary files
+*.sqlite-journal
+*.sqlite-wal
+*.sqlite-shm
+
+# Local SQLite databases
+data/*.sqlite
+data/*.sqlite3
+data/*.db
+
+# Generated analysis outputs
+data/sector_market_daily.csv
+data/sector_risk_summary.csv
+data/bootstrap_results.csv
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
